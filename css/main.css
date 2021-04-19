@@ -1,0 +1,487 @@
+body{
+    background: #fff;
+	margin: auto;
+}
+.wrapper{
+    width: 1100px;
+    margin: 0 auto;
+}
+img{max-width: 100%;}
+h1, h2, h3, h4, h5 ,h6{
+    color: #626262;
+    font-family: "raleway-regular", arial;
+    letter-spacing: 1px;
+}
+h1{ font-size: 2em; margin: .67em 0 }
+h2{ font-size: 1.5em; margin: .75em 0 }
+h3{ font-size: 1.17em; margin: .83em 0 }
+h5{ font-size: .83em; margin: 1.5em 0 }
+h6{ font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,h5, h6{ font-weight: bolder }
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table; 
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+.clearfix {  *zoom: 1;  
+	text-align: center;
+}
+.tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/*   首页  */
+.billboard{
+    width: 100%;
+    height: 690px;
+    position: relative;
+	border: none;
+}
+.billboard.light{
+    background: url('../img/billboard.jpg') no-repeat;   
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	border: none;
+}
+.billboard.dark{
+    background: url('../img/billboard2.jpg') no-repeat;
+    
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	border: none;
+}
+.billboard .shadow{
+    position: absolute;
+    width: 100%;
+    height: 142px;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -1px;
+    background: url('../img/shadow.png') repeat-x;
+	border: none;
+}
+.billboard .caption{
+    margin-top: 130px;
+    text-align: center;
+}
+.billboard .caption.light{
+    color: #fff;
+}
+.billboard .caption.dark{
+    color: #5d5d5d;
+}
+.billboard .caption h1{
+    font-family: "raleway-bold";
+    font-size: 50px;
+    font-weight: bold; 
+    margin-bottom: 30px;
+}
+.billboard .caption.light h1{
+    color: #fff;
+}
+.billboard .caption.dark h1{
+    color: #5d5d5d;
+}
+.billboard .caption p{
+    font-family: "raleway-regular";
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.billboard .caption.light p{
+    color: #fff;
+}
+.billboard .caption.dark p{
+    color: #5d5d5d;
+}
+.billboard .caption hr{
+    display: inline-block;
+    height: 1px;
+    width: 30px;
+    border: 0!important;   
+    margin: 0;
+    padding: 0;
+}
+.billboard .caption.light hr{
+    background: #fff;
+}
+.billboard .caption.dark hr{
+    background: #5d5d5d;
+}
+/*   菜单栏    */
+header{
+    width: 100%;
+    height: 125px;
+}
+header .logo{float: left;
+    margin-top: 70px;
+	display: inline-block;
+	max-height: 30px;
+}
+header nav{
+    float: right;
+    margin-top: 57px;
+}
+header nav ul li{
+    list-style: none;
+    display: block;
+    float: left;
+    margin-left: 50px;
+}
+header nav ul li a{
+    text-decoration: none;  
+    font-family: "raleway-regular";
+    font-size: 14px;
+
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -o-transition:all .2s linear;
+}
+header.light nav ul li a{  
+    color: #fff;
+}
+header.light nav ul li a:hover{
+    color: #B9B9B9;
+}
+header.dark nav ul li a{  
+    color: #5d5d5d;
+}
+header.dark nav ul li a:hover{
+    color: #919191;
+}
+/*    介绍    */
+.self_intr{width: 100%;
+border: none;
+text-align: center;
+}
+.self_intr .about_mou{
+	border: none;
+	color: #6B6B6B;
+	margin-bottom:60px;
+}
+.self_intr .clearfix{
+/*
+	width: 100%;
+	margin: auto;
+	border: none;
+*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.self_intr ul li{
+	list-style-type:none;
+    width: 313px;
+    float: left;
+    margin-left: 25px;
+	margin-right: 25px;
+	
+}
+.self_intr ul li .icon{height: 150px;}
+/*
+.self_intr ul li:first-child{
+    margin-left: 0;}
+*/
+.self_intr ul li .separator{
+    display: block;
+    width: 1px;
+    height: 20px;
+    background: #f6f6f6;
+    margin: 20px auto;
+}
+.self_intr ul li h2{ color: #616161;
+    font-family: "raleway-bold";
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.self_intr ul li p{color: #838181;
+    font-family: "raleway-regular";
+    font-size: 14px;
+    line-height: 28px; 
+    margin-top: 40px;
+    letter-spacing: .5px;
+}
+
+/*    Video    */
+.video{
+    display: block;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: 40px;
+    background: url("bg_2.jpg") no-repeat;    
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.video .video_logo{
+    margin-top: 85px;
+	height: 30px;
+}
+.video h3{
+    color: #fff;
+    font-family: "raleway-regular";
+    font-size: 14px;
+    font-weight: normal!important;
+    margin: 20px 0 0 0;
+}
+.video #play_btn{
+    display: inline-block;
+    width: 71px;
+    height: 71px;
+    background: url('../img/play_btn.png') no-repeat;
+    margin-top: 40px;
+}
+.title{
+    text-align: center;
+    overflow: hidden;
+}
+.title h2{
+    color: #616161;
+    font-family: "raleway-bold";
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+.title h3{
+    color: #9b9b9b;
+    font-family: "raleway-regular";
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    font-weight: normal!important;
+}
+.title hr.separator{
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #ebebeb;
+    margin: 0 auto;
+    padding: 0;
+    border: 0!important;
+}
+
+.skill{
+    margin-top: 100px;
+}
+.skill ul{
+    margin-top: 20px;
+    list-style: none;
+	width: 100%;
+}
+.skill ul li{
+    display: block;
+    float: left;
+    margin-left: 80px;
+    width: 313px;
+}
+.skill ul li:first-child{
+    margin-left: 0;
+}
+.skill ul li .quotes{
+    margin-right: 10px;
+}
+.skill ul li p{
+    color: #838181;
+    font-family: "raleway-regular";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .5px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ecebeb;
+    position: relative;
+}
+.skill ul li p .triangle{
+    display: block;
+    width: 10px;
+    height: 5px;
+    background: url('../img/testimonial_triangle.png') no-repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 40px;
+}
+.skill ul li .client{
+    margin-left: 20px;
+}
+.skill ul li .client img.avatar{
+    float: left;
+    margin-right: 20px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+	height: 50px;
+}
+.skill ul li .client .client_details{
+    float: left;
+}
+.skill ul li .client .client_details h4{
+    color: #7b7979;
+    font-family: "raleway-semibold";
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+.skill ul li .client .client_details h5{color: #7b7979;
+    font-family: "raleway-regular";
+    font-size: 12px;
+    margin: 0;
+    font-weight: normal;
+}
+/*    blog posts    */
+.blog_posts{margin-top: 100px;
+    padding: 70px 0;
+    background: #fafafa;
+	height: 600px;
+}
+.blog_posts ul{
+    list-style: none;
+    margin-top: 40px;
+	width: 100%;
+}
+.blog_posts ul li{
+    display: block;
+    margin-left: 50px;
+    float: left;
+}
+.blog_posts ul li:first-child{
+    margin-left: 0;
+}
+.blog_posts ul li .media .name{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 40px;
+    padding: 10px 0;
+    background: rgba(62, 62, 62, .7);
+    text-align: center;
+}
+.blog_posts ul li .media .name span{
+    display: block;
+}
+.blog_posts ul li .media .name .name1{
+    color: #fff;
+    font-family: "raleway-bold";
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.blog_posts ul li .media .name .name2{
+    color: #fff;
+    font-family: "raleway-regular";
+    font-size: 13px;
+	letter-spacing: 1px;
+}
+.blog_posts ul li .media{
+    position: relative;
+}
+.blog_posts ul li h1{
+    color: #616161;
+    font-family: "raleway-regular";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 20px 0 0 0;
+}
+
+.contract{
+	height: 450px;
+	text-align: center;
+}
+.contract .right{         float: left;
+         width: 100%;
+         height:450px;
+         background-color:#fff;
+	overflow:visible;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	z-index: -1;
+}
+.contract .right .input_form1{
+	margin-left:20px;
+}
+.contract .right .input_form1 .input_style1{border-style:none;
+	background-color:#EDEDED;
+	width: 300px;
+	height: 38px;
+	text-align: left;
+	color:#6F6F6F;
+	padding-left: 20px;
+	margin-left:20px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+.contract .right .input_form1 .input_style2{
+	border-style:none;
+	background-color:#EDEDED;
+	width: 650px;
+	height: 75px;
+	color:#6F6F6F;
+	padding-left: 20px;
+	margin-left:20px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+.contract .right .input_form1 .submit_style{
+	border-style:none;background-color:#EDEDED;
+	width: 675px;
+	height: 50px;
+	color:#6F6F6F;
+	padding-left: 20px;
+	padding-top: -20px;
+	margin-left:20px;
+	margin-top: 20px;
+	letter-spacing: 12px;
+	font-weight: bold;
+	
+}
+.contract .right .input_form1 .submit_style:hover{
+	background-color: #2A2562;
+	color: #FFFFFF;
+}
+
+/*    页脚    */
+footer{
+    padding: 35px 0;
+    overflow: hidden;
+	background-color: #122045;
+	height: 30px;
+	color: #FFFFFF;
+}
+footer .footer_logo{
+    float: left;
+	height: 30px;
+}
+footer nav ul{
+    float: right;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 5px; 
+}
+footer nav ul li{
+    float: left;
+    margin-left: 25px;
+}
+footer nav ul li a{
+    color: #FFFFFF;
+    font-family: "raleway-regular";
+    font-size: 16px;
+    text-decoration: none;
+    transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -o-transition:all .2s linear;
+}
+footer nav ul li a:hover{
+    color: #616161;
+}
